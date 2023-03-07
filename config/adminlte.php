@@ -332,7 +332,7 @@ return [
             'submenu' => [
                 [
                     'text' => 'Amalia Salsa Lutfiana',
-                    'url'  => '#',
+                    'url'  => 'user/amal',
                 ],
 
                 [
