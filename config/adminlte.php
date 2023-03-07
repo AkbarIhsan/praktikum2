@@ -293,7 +293,7 @@ return [
         // Navbar items:
         [
             'text'         => 'home',
-            'url'          => '/homee',
+            'url'          => '/',
             'topnav_right' => true,
         ],
 
@@ -456,7 +456,6 @@ return [
                 ],
             ],
         ],
-
         'Toastr' => [
             'active' => false,
             'files' => [

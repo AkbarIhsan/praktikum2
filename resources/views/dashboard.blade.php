@@ -1,14 +1,9 @@
 @extends('adminlte::page')
 
 @section('content')
-    <div class="shadow-none p-3 mb-5 bg-body-tertiary rounded"><center>ini dashboard</center></div>
+    <center>INI DASHBOARD</center>
     <script>
-        Swal.fire({
-        title: 'Title',
-        text: 'Message',
-        icon: 'success',
-        confirmButtonText: 'OK'
-        })
+        alert("selamat datang");
     </script>
 @endsection
 
