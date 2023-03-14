@@ -15,10 +15,11 @@ class MahasiswaSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('mahasiswa')->where([
+        DB::table('mahasiswa')->insert([
             'name' => 'Akbar',
-            'gender' => 'Laki-Laki',
-            'alamat' => 'Kediri'
+            'gender' => 'Laki-laki',
+            'alamat' => 'Kediri',
+            'foto' => 'https://i.ibb.co/wNCWF7x/abun.jpg'
             ]);
     }
 }
