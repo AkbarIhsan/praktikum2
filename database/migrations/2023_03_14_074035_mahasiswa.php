@@ -13,12 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::table('users', function (Blueprint $table) {
-            $table->dropColumn('title');
-            $table->dropColumn('slug');
-            $table->dropColumm('content');
-            $table->dropColumn('draft');
-            });
+        Schema::create('mahasiswa', function (Blueprint $table) {
+            $table->id('id_mahasiswa');
+            $table->string('name');
+            $table->string('gender');
+            $table->string('alamat');
+            $table->timestamps();
+        });
     }
 
     /**
@@ -28,6 +29,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('users');
+        Schema::dropIfExists('mahasiswa');
     }
 };

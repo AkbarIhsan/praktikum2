@@ -35,3 +35,4 @@ Route::get('/pengalaman', [PengalamanController::class, 'pengalaman'])->name('pe
 Route::get('/user/{name}', [UserController::class, 'user']);
 
 Route::get('/content', [ContentController::class, 'content'])->name('content');
+

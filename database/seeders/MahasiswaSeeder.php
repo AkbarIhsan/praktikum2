@@ -6,7 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 
-class PostSeeder extends Seeder
+class MahasiswaSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -15,9 +15,10 @@ class PostSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('posts')->insert([
-            'slug' => ' Pengalaman Amal',
-            'content' => 'Alhamdulillah'
+        DB::table('mahasiswa')->where([
+            'name' => 'Akbar',
+            'gender' => 'Laki-Laki',
+            'alamat' => 'Kediri'
             ]);
     }
 }
