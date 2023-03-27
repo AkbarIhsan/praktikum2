@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::table('mahasiswa', function (Blueprint $table) {
-            $table->string('foto');
+            Schema::rename('mahasiswa', 'users');
         });
     }
 

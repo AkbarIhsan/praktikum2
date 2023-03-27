@@ -16,10 +16,17 @@ class MahasiswaSeeder extends Seeder
     public function run()
     {
         DB::table('mahasiswa')->insert([
-            'name' => 'Akbar',
+            'name' => 'akbar',
             'gender' => 'Laki-laki',
             'alamat' => 'Kediri',
             'foto' => 'https://i.ibb.co/wNCWF7x/abun.jpg'
+            ]);
+
+        DB::table('mahasiswa')->insert([
+            'name' => 'amal',
+            'gender' => 'Perempuan',
+            'alamat' => 'Kediri',
+            'foto' => 'https://i.ibb.co/wNCWF7x/amal.jpg'
             ]);
     }
 }

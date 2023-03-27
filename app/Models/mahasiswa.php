@@ -15,7 +15,10 @@ class mahasiswa extends Model
     protected $fillable = [
         'nama',
         'gender',
-        'alamat'
+        'alamat',
+        'username',
+        'email',
+        'password'
     ];
 
     public static function getByName($name){

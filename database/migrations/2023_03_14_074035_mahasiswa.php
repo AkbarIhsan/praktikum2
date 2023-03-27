@@ -16,8 +16,13 @@ return new class extends Migration
         Schema::create('mahasiswa', function (Blueprint $table) {
             $table->id('id_mahasiswa');
             $table->string('name');
-            $table->string('gender');
+            $table->string('username');
+            $table->string('email')->unique();
+            $table->string('password');
             $table->string('alamat');
+            $table->string('foto')->nullable();
+            $table->string('gender');
+            $table->timestamp('email_verified_at')->nullable();
             $table->timestamps();
         });
     }

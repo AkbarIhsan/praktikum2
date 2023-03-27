@@ -32,7 +32,8 @@ Route::get('/', [HomeeController::class, 'homee'])->name('homee');
 
 Route::get('/pengalaman', [PengalamanController::class, 'pengalaman'])->name('pengalaman');
 
-Route::get('/user/{name}', [UserController::class, 'user']);
+Route::get('/users', [UserController::class, 'user']);
 
 Route::get('/content', [ContentController::class, 'content'])->name('content');
+
 

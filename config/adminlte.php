@@ -328,18 +328,19 @@ return [
 
         [
             'text'    => 'User',
+            'url'     => 'users',
             'icon'    => 'fas fa-fw fa-user',
-            'submenu' => [
-                [
-                    'text' => 'Amalia Salsa Lutfiana',
-                    'url'  => 'user/amal',
-                ],
+            // 'submenu' => [
+            //     [
+            //         'text' => 'Amalia Salsa Lutfiana',
+            //         'url'  => 'user/amal',
+            //     ],
 
-                [
-                    'text' => 'Muhammad Akbar',
-                    'url'  => 'user/akbar',
-                ],
-            ],
+            //     [
+            //         'text' => 'Muhammad Akbar',
+            //         'url'  => 'user/akbar',
+            //     ],
+            // ],
         ],
 
         [

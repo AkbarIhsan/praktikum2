@@ -2,13 +2,15 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\mahasiswa;
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class UserController extends Controller
 {
-    public function user($name){
-        $mahasiswa = mahasiswa::getByName($name);
-        return view('mahasiswa', ['mahasiswa' => $mahasiswa]);
+    public function user(){
+        $users = Auth::user();
+        return view('users', ['users' => $users]);
     }
+
 }

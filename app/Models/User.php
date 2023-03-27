@@ -17,11 +17,23 @@ class User extends Authenticatable
      *
      * @var array<int, string>
      */
+    protected $table = 'users';
+    protected $primaryKey = 'id_mahasiswa';
+
     protected $fillable = [
         'name',
+        'gender',
+        'alamat',
+        'username',
         'email',
-        'password',
+        'password'
     ];
+
+    public static function getByName($name){
+        return User::where([
+            'name' => $name
+        ])->first();
+    }
 
     /**
      * The attributes that should be hidden for serialization.
