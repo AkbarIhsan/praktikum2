@@ -5,6 +5,7 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\PengalamanController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ContentController;
+use App\Http\Controllers\Auth\LoginController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,11 +25,13 @@ use Illuminate\Support\Facades\Route;
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/upload', [App\Http\Controllers\ImageController::class, 'store'])->name('upload');
+
+Route::get('/hom', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
 
-Route::get('/', [HomeeController::class, 'homee'])->name('homee');
+Route::get('/home', [HomeeController::class, 'homee'])->name('homee');
 
 Route::get('/pengalaman', [PengalamanController::class, 'pengalaman'])->name('pengalaman');
 

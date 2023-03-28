@@ -293,7 +293,7 @@ return [
         // Navbar items:
         [
             'text'         => 'home',
-            'url'          => '/',
+            'url'          => '/home',
             'topnav_right' => true,
         ],
 
